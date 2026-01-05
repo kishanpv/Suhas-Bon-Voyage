@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Voyage, Suhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #fdfbf7;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-in;
+        }
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            opacity: 0.95;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .entry {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 3rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 0.8s ease-in forwards;
+        }
+        .entry:nth-child(even) {
+            animation-delay: 0.2s;
+        }
+        .entry img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 auto;
+        }
+        .entry-text {
+            flex: 1;
+        }
+        .entry-text .author {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .entry-text p {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+        .kannada {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        .closing {
+            min-height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+        }
+        .closing h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            animation: fadeIn 1s ease-in;
+        }
+        @media (min-width: 768px) {
+            .entry {
+                flex-direction: row;
+                align-items: center;
+                padding: 4rem 2rem;
+            }
+            .entry:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+            .entry img {
+                margin: 0;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Bon Voyage, Suhas</h1>
+        <p>A send-off filled with love, memories, and benne dosa dreams</p>
+    </section>
+
+    <section class="entry">
+        <img src="photo-01.jpg" alt="Sowmya">
+        <div class="entry-text">
+            <div class="author">Sowmya</div>
+            <p>Wishing you all the success & happiness in the world! I must confess, I'll miss you dearly, but I'm very happy that a brighter future awaits you. God bless you Tuvashi!</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-02.jpg" alt="Avani">
+        <div class="entry-text">
+            <div class="author">Avani♡</div>
+            <p>Mama is the feeling of a warm room on a cold day🥰. Always lighting up the room with just his presence. The joker, the care taker and the only person I go to when I want ice cream😋. I hope your life in Germany blooms and, Janya and Tapasvi come back with a German accent, and you come back with Nutella every year🥹. Love you mama forever in our hearts🌷</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-03.jpg" alt="Swara">
+        <div class="entry-text">
+            <div class="author">Swara</div>
+            <p>Love you Mama. I will miss you a lot & I will miss all the icecreams you will get me in future.</p>
+            <p>Have a safe journey and promise me you have to video call all of us when you reach Germany -</p>
+            <p><strong>Eine gute Reise! Wir wünschen dir eine tolle Zeit !</strong></p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-04.jpg" alt="Vibha">
+        <div class="entry-text">
+            <div class="author">Vibha</div>
+            <p>Always smiling, always joking, always spreading joy—that's you.</p>
+            <p>You make every family moment brighter just by being there.</p>
+            <p>As you begin this new chapter, take all our love with you.</p>
+            <p>We'll miss you, but we're cheering for you every step of the way 🥰</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-05.jpg" alt="Pratibha">
+        <div class="entry-text">
+            <div class="author">Pratibha</div>
+            <p class="kannada">ನಿನ್ನ ನಗು, ಮಾತುಗಳು ಮತ್ತು ಖುಷಿ ನಮಗೆ ತುಂಬಾ ಮಿಸ್ ಆಗುತ್ತವೆ.</p>
+            <p class="kannada">ಯಾರೇ ಇದ್ದರೂ ಕ್ಷಣದಲ್ಲೇ ಸ್ನೇಹಿತರನ್ನಾಗಿ ಮಾಡಿಕೊಳ್ಳುತ್ತೀಯ.</p>
+            <p class="kannada">ನೀನು ಇದ್ದರೆ ಎಲ್ಲೆಡೆ ಖುಷಿಯ ವಾತಾವರಣ ಇರುತ್ತಿತ್ತು.</p>
+            <p class="kannada">ಹೊಸ ಪ್ರಯಾಣಕ್ಕೆ ಹೊರಟಿರುವ ನಿನಗೆ ನಮ್ಮ ಪ್ರೀತಿ ಸದಾ ಜೊತೆಯಾಗಿರಲಿ.</p>
+            <p class="kannada">ಹೊಸ ಜಾಗದಲ್ಲೂ ಇದೇ ಖುಷಿ ಮತ್ತು ಸಡಗರದಿಂದ ಇರು..❤️</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-06.jpg" alt="Chaitra">
+        <div class="entry-text">
+            <div class="author">Chaitra</div>
+            <p>Suhas - Thuashi - My Little Brother, my confidant. My kids one and only loving Maama.</p>
+            <p>From being my play buddy during childhood to a responsible brother who listens to me with patience and consoles me everytime I break down about my kids, u ve grown a lot. Im a proud and happy sister to see u grow the way you have.</p>
+            <p>Nvr let success get to ur head, nvr let failure bury u.. All the best for ur future. God Bless u my little brother, will miss u 😘🤗</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-07.jpg" alt="Gautham">
+        <div class="entry-text">
+            <div class="author">Gautham</div>
+            <p>Don't recall when or where this was taken. But the goofy faces make total sense. This is the side of me that came out around Suhas. A fun, free side. I have no doubt he still has this effect on everyone around him; just by being his fun, free self.</p>
+            <p>Congrats to Suhas, Shilpa and the kids. Best of luck in this new chapter of life.</p>
+            <p><strong>Deutschland hat Glück, Suhas und seine Familie als Gäste zu haben!</strong></p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-08.jpg" alt="Shruthi">
+        <div class="entry-text">
+            <div class="author">Shruthi</div>
+            <p>Suhas is the kind of person everyone loves to have in the room! With his cheerful and talkative nature, he doesn't just enter a room; he transforms it! His ability to keep things lighthearted is a gift to those around him. Balancing the needs of a family (as a son, husband, and father) while maintaining a professional edge as an employee is no small feat. It shows immense character and heart!</p>
+            <p>May your laughter never fade, your jokes always find their mark, and your life remain as vibrant and fulfilling as the joy you give to others. Wishing you boundless success and happiness in every role you play! 😊💐</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-09.jpg" alt="Pramod">
+        <div class="entry-text">
+            <div class="author">Pramod</div>
+            <p>Bon voyage, Suhas! Wishing you a safe and wonderful journey filled with joy, adventure, and unforgettable moments. May every new place you visit bring you happiness and every experience teach you something beautiful. Have an amazing trip and come back with loads of great memories!</p>
+        </div>
+    </section>
+
+    <section class="entry">
+        <img src="photo-10.jpg" alt="Kishan">
+        <div class="entry-text">
+            <div class="author">Kishan</div>
+            <p>Until we meet again for Benne Dosa !</p>
+        </div>
+    </section>
+
+    <section class="closing">
+        <h2>Gute Reise, Suhas – Bis bald!</h2>
+    </section>
+</body>
+</html>
