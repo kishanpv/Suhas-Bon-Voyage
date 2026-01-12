@@ -30,4 +30,21 @@
 ---
 
 ## Review Section
-(Will be added after completion)
+
+### Version 1.0 (Completed)
+- ✅ Saved initial bon voyage website with 10 photo entries
+- ✅ Created git tag v1.0
+- ✅ Pushed to GitHub
+
+### Version 2.0 (Completed)
+- ✅ Added Soumitha's photo entry (11th entry)
+- ✅ Fixed image file extension (.jpeg)
+- ✅ Created git tag v2.0
+- ✅ Pushed to GitHub at https://github.com/kishanpv/Suhas-Bon-Voyage.git
+
+### Changes Made:
+**Version 1 → Version 2:**
+- Added new section entry for Soumitha at index.html:231-238
+- Added images/photo-11.jpeg
+- Message includes English and German text ("Ich werde dich vermissen")
+- Website now has 11 total photo entries
